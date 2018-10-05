@@ -12,6 +12,8 @@
 		C9FD4C40C72F0727B0150B01 /* Pods_instagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36E939E6CA8BF13E955C57FC /* Pods_instagram.framework */; };
 		D1123AB721642E4300E27086 /* HomeFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1123AB621642E4300E27086 /* HomeFeedViewController.swift */; };
 		D1123AC12164658800E27086 /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1123AC02164658800E27086 /* ComposeViewController.swift */; };
+		D16A27832166A6BB00A1439A /* HomeFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16A27822166A6BB00A1439A /* HomeFeedCell.swift */; };
+		D16A27852166B15E00A1439A /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16A27842166B15E00A1439A /* Post.swift */; };
 		D1B22B35215BE19900F73BDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B22B34215BE19900F73BDF /* AppDelegate.swift */; };
 		D1B22B3A215BE19900F73BDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1B22B38215BE19900F73BDF /* Main.storyboard */; };
 		D1B22B3C215BE19B00F73BDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1B22B3B215BE19B00F73BDF /* Assets.xcassets */; };
@@ -50,6 +52,8 @@
 		AE2CA10BEBB312DCF5B8FA34 /* Pods_instagramUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_instagramUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1123AB621642E4300E27086 /* HomeFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFeedViewController.swift; sourceTree = "<group>"; };
 		D1123AC02164658800E27086 /* ComposeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
+		D16A27822166A6BB00A1439A /* HomeFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFeedCell.swift; sourceTree = "<group>"; };
+		D16A27842166B15E00A1439A /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		D1B22B31215BE19900F73BDF /* instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1B22B34215BE19900F73BDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1B22B39215BE19900F73BDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -149,9 +153,11 @@
 				D1123AB821642E5400E27086 /* ViewController */,
 				D1B22B34215BE19900F73BDF /* AppDelegate.swift */,
 				D1B22B38215BE19900F73BDF /* Main.storyboard */,
+				D16A27822166A6BB00A1439A /* HomeFeedCell.swift */,
 				D1B22B3B215BE19B00F73BDF /* Assets.xcassets */,
 				D1B22B3D215BE19B00F73BDF /* LaunchScreen.storyboard */,
 				D1B22B40215BE19B00F73BDF /* Info.plist */,
+				D16A27842166B15E00A1439A /* Post.swift */,
 			);
 			path = instagram;
 			sourceTree = "<group>";
@@ -381,11 +387,13 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-instagram/Pods-instagram-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
 				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
+				"${BUILT_PRODUCTS_DIR}/Toucan/Toucan.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toucan.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -399,8 +407,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D16A27832166A6BB00A1439A /* HomeFeedCell.swift in Sources */,
 				D1B22B63215BE66C00F73BDF /* LoginViewController.swift in Sources */,
 				D1B22B35215BE19900F73BDF /* AppDelegate.swift in Sources */,
+				D16A27852166B15E00A1439A /* Post.swift in Sources */,
 				D1123AB721642E4300E27086 /* HomeFeedViewController.swift in Sources */,
 				D1123AC12164658800E27086 /* ComposeViewController.swift in Sources */,
 			);

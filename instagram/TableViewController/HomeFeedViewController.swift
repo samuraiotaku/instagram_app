@@ -10,17 +10,18 @@ import UIKit
 
 class HomeFeedViewController: UITableViewController {
 
+    @IBOutlet var homeTableView: UITableView!
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        homeTableView.dataSource = self
+//        // Initialize a UIRefreshControl
+//        let refreshControl = UIRefreshControl()
+//        refreshControl.addTarget(self, action: #selector(refreshControlAction(_:)), for: UIControlEvents.valueChanged)
+        
+        
     }
 
     // MARK: - Table view data source
