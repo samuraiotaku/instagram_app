@@ -152,12 +152,12 @@
 				D1123AB921642E6600E27086 /* TableViewController */,
 				D1123AB821642E5400E27086 /* ViewController */,
 				D1B22B34215BE19900F73BDF /* AppDelegate.swift */,
-				D1B22B38215BE19900F73BDF /* Main.storyboard */,
-				D16A27822166A6BB00A1439A /* HomeFeedCell.swift */,
 				D1B22B3B215BE19B00F73BDF /* Assets.xcassets */,
 				D1B22B3D215BE19B00F73BDF /* LaunchScreen.storyboard */,
 				D1B22B40215BE19B00F73BDF /* Info.plist */,
+				D1B22B38215BE19900F73BDF /* Main.storyboard */,
 				D16A27842166B15E00A1439A /* Post.swift */,
+				D16A27822166A6BB00A1439A /* HomeFeedCell.swift */,
 			);
 			path = instagram;
 			sourceTree = "<group>";
@@ -387,12 +387,14 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-instagram/Pods-instagram-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
 				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
+				"${BUILT_PRODUCTS_DIR}/ParseUI/ParseUI.framework",
 				"${BUILT_PRODUCTS_DIR}/Toucan/Toucan.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ParseUI.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toucan.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -101,33 +101,41 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="331" id="bNk-hW-IR6">
-                                <rect key="frame" x="0.0" y="28" width="375" height="331"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HomeFeedCell" rowHeight="317" id="bNk-hW-IR6" customClass="HomeFeedCell" customModule="instagram" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="317"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bNk-hW-IR6" id="56T-er-AUN" customClass="HomeFeedCell" customModule="instagram" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="330.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="316.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="iyd-T1-BnV">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="iyd-T1-BnV" customClass="PFImageView">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="264"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="264" id="OFa-x1-i58"/>
+                                                <constraint firstAttribute="height" constant="264" id="7Ma-9P-Ts6"/>
+                                                <constraint firstAttribute="width" constant="375" id="P8Y-sa-Sub"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Image Placeholder" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zWG-Kc-YPp">
-                                            <rect key="frame" x="116.5" y="272" width="142" height="20.5"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Image Placeholder" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zWG-Kc-YPp">
+                                            <rect key="frame" x="16" y="272" width="343" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="iyd-T1-BnV" firstAttribute="centerX" secondItem="zWG-Kc-YPp" secondAttribute="centerX" id="7x8-Qr-0t8"/>
-                                        <constraint firstItem="iyd-T1-BnV" firstAttribute="leading" secondItem="56T-er-AUN" secondAttribute="leading" id="HQ4-9c-rCk"/>
-                                        <constraint firstItem="iyd-T1-BnV" firstAttribute="top" secondItem="56T-er-AUN" secondAttribute="top" id="aR6-k0-Mrj"/>
-                                        <constraint firstItem="zWG-Kc-YPp" firstAttribute="top" secondItem="iyd-T1-BnV" secondAttribute="bottom" constant="8" symbolic="YES" id="vNB-6t-B30"/>
+                                        <constraint firstItem="zWG-Kc-YPp" firstAttribute="top" secondItem="iyd-T1-BnV" secondAttribute="bottom" constant="8" symbolic="YES" id="7e4-Yt-qoy"/>
+                                        <constraint firstItem="iyd-T1-BnV" firstAttribute="top" secondItem="56T-er-AUN" secondAttribute="top" id="Ler-vy-eTL"/>
+                                        <constraint firstItem="iyd-T1-BnV" firstAttribute="leading" secondItem="56T-er-AUN" secondAttribute="leading" id="MTP-ZL-ETe"/>
+                                        <constraint firstItem="zWG-Kc-YPp" firstAttribute="leading" secondItem="56T-er-AUN" secondAttribute="leadingMargin" id="YCB-Sh-MU7"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="zWG-Kc-YPp" secondAttribute="bottom" constant="13" id="rUO-wi-pcY"/>
+                                        <constraint firstItem="zWG-Kc-YPp" firstAttribute="top" secondItem="iyd-T1-BnV" secondAttribute="bottom" constant="8" id="wOV-KC-0xn"/>
+                                        <constraint firstItem="zWG-Kc-YPp" firstAttribute="trailing" secondItem="56T-er-AUN" secondAttribute="trailingMargin" id="zu0-4m-8xI"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="postCaption" destination="zWG-Kc-YPp" id="o6F-YP-jAi"/>
+                                    <outlet property="postImage" destination="iyd-T1-BnV" id="YYR-iG-YhV"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -252,7 +260,7 @@
         <image name="insta_camera_btn" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="au2-SC-eyZ"/>
-        <segue reference="jD3-Yf-Rpw"/>
+        <segue reference="VTz-Kg-T9a"/>
+        <segue reference="yyw-Oj-TnK"/>
     </inferredMetricsTieBreakers>
 </document>
