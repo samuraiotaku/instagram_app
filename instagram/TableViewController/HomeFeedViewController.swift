@@ -21,8 +21,8 @@ class HomeFeedViewController: UITableViewController {
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
-        tableView.rowHeight = UITableViewAutomaticDimension
-        tableView.estimatedRowHeight = 500
+        tableView.rowHeight = 300
+        //tableView.estimatedRowHeight = 500
         //UIRefreshControll
         let refreshControl = UIRefreshControl()
         refreshControl.addTarget(self, action: #selector(refreshControlAction(_:)), for: UIControlEvents.valueChanged)

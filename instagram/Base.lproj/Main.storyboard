@@ -108,29 +108,18 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="316.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="iyd-T1-BnV" customClass="PFImageView">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="iyd-T1-BnV" customClass="PFImageView">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="264"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="264" id="7Ma-9P-Ts6"/>
-                                                <constraint firstAttribute="width" constant="375" id="P8Y-sa-Sub"/>
-                                            </constraints>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Image Placeholder" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zWG-Kc-YPp">
-                                            <rect key="frame" x="16" y="272" width="343" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Image Placeholder" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zWG-Kc-YPp">
+                                            <rect key="frame" x="59" y="272" width="257" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
-                                    <constraints>
-                                        <constraint firstItem="zWG-Kc-YPp" firstAttribute="top" secondItem="iyd-T1-BnV" secondAttribute="bottom" constant="8" symbolic="YES" id="7e4-Yt-qoy"/>
-                                        <constraint firstItem="iyd-T1-BnV" firstAttribute="top" secondItem="56T-er-AUN" secondAttribute="top" id="Ler-vy-eTL"/>
-                                        <constraint firstItem="iyd-T1-BnV" firstAttribute="leading" secondItem="56T-er-AUN" secondAttribute="leading" id="MTP-ZL-ETe"/>
-                                        <constraint firstItem="zWG-Kc-YPp" firstAttribute="leading" secondItem="56T-er-AUN" secondAttribute="leadingMargin" id="YCB-Sh-MU7"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="zWG-Kc-YPp" secondAttribute="bottom" constant="13" id="rUO-wi-pcY"/>
-                                        <constraint firstItem="zWG-Kc-YPp" firstAttribute="top" secondItem="iyd-T1-BnV" secondAttribute="bottom" constant="8" id="wOV-KC-0xn"/>
-                                        <constraint firstItem="zWG-Kc-YPp" firstAttribute="trailing" secondItem="56T-er-AUN" secondAttribute="trailingMargin" id="zu0-4m-8xI"/>
-                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="postCaption" destination="zWG-Kc-YPp" id="o6F-YP-jAi"/>
